@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ism.inscription.controlleurs.ClasseProfController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <AnchorPane prefHeight="327.0" prefWidth="637.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="tabClasseprof" prefHeight="299.0" prefWidth="340.0">
+                    <columns>
+                      <TableColumn fx:id="tdId" prefWidth="135.33334350585938" text="ID" />
+                      <TableColumn fx:id="tdlibellé" prefWidth="196.6666259765625" text="libellé" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </center>
+         <top>
+            <AnchorPane prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: #974d11 #6a3709 #3d2100;" BorderPane.alignment="CENTER">
+               <children>
+                  <Text layoutX="29.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nci  du prof :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtNci" layoutX="119.0" layoutY="35.0" prefHeight="25.0" prefWidth="121.0" />
+                  <Button layoutX="381.0" layoutY="35.0" mnemonicParsing="false" onAction="#handlelisterclasseProf" style="-fx-background-color: FFD700;" text="ENREGISTRER" />
+               </children>
+            </AnchorPane>
+         </top>
+         <right>
+            <AnchorPane fx:id="anchorAffecter" prefHeight="300.0" prefWidth="260.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text layoutX="32.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: FFD700;" text="Affecter classe au professeur">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtClasseID" layoutX="97.0" layoutY="98.0" prefHeight="25.0" prefWidth="143.0" />
+                  <TextField fx:id="txtProfId" layoutX="97.0" layoutY="176.0" />
+                  <Text layoutX="11.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prof_id :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="14.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Classe_id :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="182.0" layoutY="236.0" mnemonicParsing="false" onAction="#handleAffecterclasseprof" style="-fx-background-color: FFD700;" text="Valider">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

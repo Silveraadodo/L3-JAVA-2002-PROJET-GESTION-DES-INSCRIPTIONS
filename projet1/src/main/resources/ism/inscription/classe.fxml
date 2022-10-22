@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorContent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ism.inscription.controlleurs.ClasseController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="114.0" prefWidth="600.0" style="-fx-background-color: #974d11 #6a3709 #3d2100;" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="txtLibelle" layoutX="20.0" layoutY="49.0" prefHeight="27.0" prefWidth="201.0" style="-fx-border-color: FFD700; -fx-border-width: 0px 0px 2px 0px; -fx-background-color: white;" />
+                  <Text fill="#070505" layoutX="26.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="libellé" wrappingWidth="74.17904663085938">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="313.0" layoutY="42.0" mnemonicParsing="false" onAction="#onSaveClasse" style="-fx-background-color: FFD700;" text="ENREGISTRER" textFill="#0b0000">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="487.0" layoutY="42.0" mnemonicParsing="false" onAction="#handleloadViewClasseProf" style="-fx-background-color: FFD700;" text="Professeur">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="245.0" prefWidth="600.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="tabClasse" layoutX="17.0" layoutY="4.0" prefHeight="286.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="tdId" prefWidth="291.9999694824219" text="ID" />
+                      <TableColumn fx:id="tdLibelle" prefWidth="308.66668701171875" text="libellé" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0" prefWidth="657.0" style="-fx-background-color: #974d11 #6a3709 #3d2100;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ism.inscription.controlleurs.ProfesseurController">
+   <children>
+      <TextField fx:id="txtNci" layoutX="14.0" layoutY="81.0" prefHeight="29.0" prefWidth="173.0" promptText="NCI">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtNomComplet" layoutX="14.0" layoutY="138.0" promptText="Nom_Complet">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtGrade" layoutX="14.0" layoutY="193.0" promptText="Grade">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="tabProf" layoutX="221.0" layoutY="58.0" prefHeight="304.0" prefWidth="427.0">
+        <columns>
+          <TableColumn fx:id="tdId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="tdNci" text="NCI" />
+            <TableColumn fx:id="tdNomComplet" prefWidth="128.0" text="Nom-Complet" />
+            <TableColumn fx:id="tdGrade" prefWidth="143.33334350585938" text="Grade" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="258.0" mnemonicParsing="false" onAction="#onSaveProfesseur" style="-fx-background-color: FFD700;" text="ENREGISTRER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
